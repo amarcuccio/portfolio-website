@@ -251,23 +251,23 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Andrew Marcuccio
+          Home - Andrew Marcuccio
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I’m Andrew, an experienced I.T. professional and perpetual student based in Sudbury, Ontario. Welcome to my website! This is the best place to learn all about me, and follow along as I document my journey studying data analytics."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            I.T. professional, student, and aspiring data analyst.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Andrew, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            I’m Andrew, an experienced I.T. professional and perpetual student 
+            based in Sudbury, Ontario. Welcome to my website! This is the best 
+            place to learn all about me, and follow along as I document my journey 
+            studying data analytics.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -281,12 +281,12 @@ export default function Home({ articles }) {
               icon={InstagramIcon}
             />
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/amarcuccio"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/amarcuccio/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
