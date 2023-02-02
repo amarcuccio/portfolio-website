@@ -95,16 +95,16 @@ export default function About() {
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
+              <SocialLink href="https://twitter.com" icon={TwitterIcon}>
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+              <SocialLink href="https://www.instagram.com/andrew.marcuccio/" icon={InstagramIcon} className="mt-4">
                 Follow on Instagram
               </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+              <SocialLink href="https://github.com/amarcuccio" icon={GitHubIcon} className="mt-4">
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+              <SocialLink href="https://www.linkedin.com/in/amarcuccio/" icon={LinkedInIcon} className="mt-4">
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
