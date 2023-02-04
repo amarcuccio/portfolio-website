@@ -26,17 +26,6 @@ function SocialLink({ className, href, children, icon: Icon }) {
   )
 }
 
-function MailIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        fillRule="evenodd"
-        d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
-      />
-    </svg>
-  )
-}
-
 export default function About() {
   return (
     <>
@@ -65,14 +54,14 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                As a child, I never had the answer to &quot;What do you want to be when you grow up?&quot; 
+                As a child, I never had a good answer when asked: &quot;What do you want to be when you grow up?&quot; 
                 I found it challenging to identify an interest or hobby that I wanted to pursue as 
                 a career (aside from becoming a professional hockey player!)
               </p>
               <p>
                 In my early twenties, I studied computer engineering at my local college. To be 
                 honest, I can&apos;t remember how I stumbled upon the program. Over the next twelve years,
-                I had the privilege of putting my knowledge into practice and gained experience 
+                I had the privilege of putting my expertise into practice and gained experience 
                 working in the mining, healthcare, and education sectors.
               </p>
               <p>
@@ -84,8 +73,8 @@ export default function About() {
               <p>
                 Anyone who knows me will attest that I am resolutely analytical and also a firm 
                 believer in evidence-based decision-making. Data analytics gives me the ultimate 
-                outlet to exercise these competencies, and share visualizations of my findings for 
-                the world to explore.
+                outlet to exercise my skill set, and share visualizations of my findings for 
+                the world to discover.
               </p>
             </div>
           </div>
@@ -102,13 +91,6 @@ export default function About() {
               </SocialLink>
               <SocialLink href="https://www.linkedin.com/in/amarcuccio/" icon={LinkedInIcon} className="mt-4">
                 Follow on LinkedIn
-              </SocialLink>
-              <SocialLink
-                href="mailto:spencer@planetaria.tech"
-                icon={MailIcon}
-                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
-              >
-                andrew@planetaria.tech
               </SocialLink>
             </ul>
           </div>

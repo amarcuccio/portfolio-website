@@ -264,7 +264,7 @@ export default function Home({ articles }) {
             I.T. professional, student, and aspiring data analyst.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Andrew, an experienced I.T. professional and perpetual student 
+            I’m Andrew, an experienced I.T. professional and ambitious student 
             based in Sudbury, Ontario. Welcome to my website! This is the best 
             place to learn all about me, and follow along as I document my journey 
             studying data analytics.
