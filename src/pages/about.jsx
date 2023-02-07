@@ -68,13 +68,13 @@ export default function About() {
                 My career has presented me with countless opportunities to make discretionary 
                 decisions and independent recommendations. These occasions have taught me that I 
                 infallibly apply quantitative data analysis, and rely on measurable statistics 
-                before endorsing any alternative course of action.
+                before selecting a course of action.
               </p>
               <p>
-                Anyone who knows me will attest that I am resolutely analytical and also a firm 
+                Anyone who knows me will attest that I am a resolutely analytical person and also a firm 
                 believer in evidence-based decision-making. Data analytics gives me the ultimate 
                 outlet to exercise my skill set, and share visualizations of my findings for 
-                the world to discover.
+                the world to interpret.
               </p>
             </div>
           </div>

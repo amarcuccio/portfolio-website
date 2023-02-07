@@ -61,11 +61,11 @@ export default function Projects() {
         <title>Projects - Andrew Marcuccio</title>
         <meta
           name="description"
-          content="Things I’ve made trying to tell a story with data."
+          content="Things I’ve made trying to tell a story using data."
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to tell a story with data."
+        title="Things I’ve made trying to tell a story using data."
         intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code on GitHub or see the data in action."
       >
         <ul

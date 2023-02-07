@@ -188,7 +188,7 @@ function Education() {
   let education = [
     {
       institution: 'Cambrian College',
-      program: 'Data Analytics',
+      program: 'Business Analytics',
       logo: logoCambrian,
       start: '2023',
       end: '2024',
