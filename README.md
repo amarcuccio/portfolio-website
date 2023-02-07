@@ -1,2 +1,6 @@
-# portfolio-website
-A repository for the code for my personal website.
+### Andrew's Portfolio Website
+
+- [ ] Readme
+- [ ] Contact form
+- [ ] 404 page
+- [ ] Lighthouse score
