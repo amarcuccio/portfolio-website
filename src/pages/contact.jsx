@@ -1,84 +1,76 @@
 import Head from 'next/head'
 
-import { Card } from '@/components/Card'
-import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
-function SpeakingSection({ children, ...props }) {
-  return (
-    <Section {...props}>
-      <div className="space-y-16">{children}</div>
-    </Section>
-  )
-}
-
-function Appearance({ title, description, event, cta, href }) {
-  return (
-    <Card as="article">
-      <Card.Title as="h3" href={href}>
-        {title}
-      </Card.Title>
-      <Card.Eyebrow decorate>{event}</Card.Eyebrow>
-      <Card.Description>{description}</Card.Description>
-      <Card.Cta>{cta}</Card.Cta>
-    </Card>
-  )
-}
-
-export default function Speaking() {
+export default function Contact() {
   return (
     <>
       <Head>
         <title>Contact - Andrew Marcuccio</title>
         <meta
           name="description"
-          content="I’ve spoken at events all around the world and been interviewed for many podcasts."
+          content="Have an idea? Is there a dataset you think I should analyze? Get in touch with me."
         />
       </Head>
       <SimpleLayout
-        title="I’ve spoken at events all around the world and been interviewed for many podcasts."
-        intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions."
+        title="Have an idea? Is there a dataset you think I should analyze? Get in touch with me."
+        intro="Follow my developments on GitHub, message me on LinkedIn, or get a hold of me by 
+        email using the form below. I look forward to hearing your thoughts, suggestions, and ideas."
       >
-        <div className="space-y-20">
-          <SpeakingSection title="Conferences">
-            <Appearance
-              href="#"
-              title="In space, no one can watch you stream — until now"
-              description="A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
-              event="SysConf 2021"
-              cta="Watch video"
-            />
-            <Appearance
-              href="#"
-              title="Lessons learned from our first product recall"
-              description="They say that if you’re not embarassed by your first version, you’re doing it wrong. Well when you’re selling DIY space shuttle kits it turns out it’s a bit more complicated."
-              event="Business of Startups 2020"
-              cta="Watch video"
-            />
-          </SpeakingSection>
-          <SpeakingSection title="Podcasts">
-            <Appearance
-              href="#"
-              title="Using design as a competitive advantage"
-              description="How we used world-class visual design to attract a great team, win over customers, and get more press for Planetaria."
-              event="Encoding Design, July 2022"
-              cta="Listen to podcast"
-            />
-            <Appearance
-              href="#"
-              title="Bootstrapping an aerospace company to $17M ARR"
-              description="The story of how we built one of the most promising space startups in the world without taking any capital from investors."
-              event="The Escape Velocity Show, March 2022"
-              cta="Listen to podcast"
-            />
-            <Appearance
-              href="#"
-              title="Programming your company operating system"
-              description="On the importance of creating systems and processes for running your business so that everyone on the team knows how to make the right decision no matter the situation."
-              event="How They Work Radio, September 2021"
-              cta="Listen to podcast"
-            />
-          </SpeakingSection>
+        <div className="max-w-screen-sm">
+          <form action="#" className="space-y-8">
+            <div>
+              <label
+                htmlFor="email"
+                className="mb-2 block text-base text-zinc-600 dark:text-zinc-400"
+              >
+                Your email
+              </label>
+              <input
+                type="email"
+                id="email"
+                className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-500 dark:focus:ring-teal-500"
+                placeholder="email@domain.com"
+                required
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="subject"
+                className="mb-2 block text-base text-zinc-600 dark:text-zinc-400"
+              >
+                Subject
+              </label>
+              <input
+                type="text"
+                id="subject"
+                className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-500 dark:focus:ring-teal-500"
+                placeholder="Let me know how I can help you"
+                required
+              />
+            </div>
+            <div className="sm:col-span-2">
+              <label
+                htmlFor="message"
+                className="mb-2 block text-base text-zinc-600 dark:text-zinc-400"
+              >
+                Your message
+              </label>
+              <textarea
+                id="message"
+                rows="6"
+                className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-500 dark:focus:ring-teal-500"
+                placeholder="Leave a comment..."
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="rounded-lg bg-teal-400 py-3 px-5 text-center text-base text-white hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-700 sm:w-fit"
+            >
+              Send message
+            </button>
+          </form>
         </div>
       </SimpleLayout>
     </>
