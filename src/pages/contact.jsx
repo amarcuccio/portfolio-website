@@ -13,7 +13,7 @@ export default function Contact() {
         />
       </Head>
       <SimpleLayout
-        title="Have an idea? Is there a dataset you think I should analyze? Get in touch with me."
+        title="Want help with a special project? Have suggestions or recommendations? Get in touch with me."
         intro="Follow my developments on GitHub, message me on LinkedIn, or get a hold of me by 
         email using the form below. I look forward to hearing your thoughts, suggestions, and ideas."
       >

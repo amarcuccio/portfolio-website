@@ -50,46 +50,66 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I&apos;m Andrew Marcuccio. I live in Sudbury, Ontario, where I study data analytics.
+              I&apos;m Andrew Marcuccio. I live in Sudbury, Ontario, where I
+              study data analytics.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                As a child, I never had a good answer when asked: &quot;What do you want to be when you grow up?&quot; 
-                I found it challenging to identify an interest or hobby that I wanted to pursue as 
-                a career (aside from becoming a professional hockey player!)
+                As a child, I never had a good answer when asked: &quot;What do
+                you want to be when you grow up?&quot; I found it challenging to
+                identify an interest or hobby that I wanted to pursue as a
+                career (aside from becoming a professional hockey player!)
               </p>
               <p>
-                In my early twenties, I studied computer engineering at my local college. To be 
-                honest, I can&apos;t remember how I stumbled upon the program. Over the next twelve years,
-                I had the privilege of putting my expertise into practice and gained experience 
-                working in the mining, healthcare, and education sectors.
+                In my early twenties, I studied computer engineering at my local
+                college. To be honest, I can&apos;t remember how I stumbled upon
+                the program. Over the next twelve years, I had the privilege of
+                putting my expertise into practice and gained experience working
+                in the mining, healthcare, and education sectors.
               </p>
               <p>
-                My career has presented me with countless opportunities to make discretionary 
-                decisions and independent recommendations. These occasions have taught me that I 
-                infallibly apply quantitative data analysis, and rely on measurable statistics 
-                before selecting a course of action.
+                My career has presented me with countless opportunities to make
+                discretionary decisions and independent recommendations. These
+                occasions have taught me that I infallibly apply quantitative
+                data analysis, and rely on measurable statistics before
+                selecting a course of action.
               </p>
               <p>
-                Anyone who knows me will attest that I am a resolutely analytical person and also a firm 
-                believer in evidence-based decision-making. Data analytics gives me the ultimate 
-                outlet to exercise my skill set, and share visualizations of my findings for 
-                the world to interpret.
+                I am a firm believer in evidence-based decision-making and
+                anyone who knows me will attest that I face challenges
+                analytically and with precision. Data analytics gives me the
+                ultimate outlet to exercise my skill set, and to share my
+                visualizations and insights with the world.
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="https://twitter.com/a_marcuccio" icon={TwitterIcon}>
+              <SocialLink
+                href="https://twitter.com/a_marcuccio"
+                icon={TwitterIcon}
+              >
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="https://www.instagram.com/andrew.marcuccio/" icon={InstagramIcon} className="mt-4">
+              <SocialLink
+                href="https://www.instagram.com/andrew.marcuccio/"
+                icon={InstagramIcon}
+                className="mt-4"
+              >
                 Follow on Instagram
               </SocialLink>
-              <SocialLink href="https://github.com/amarcuccio" icon={GitHubIcon} className="mt-4">
+              <SocialLink
+                href="https://github.com/amarcuccio"
+                icon={GitHubIcon}
+                className="mt-4"
+              >
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="https://www.linkedin.com/in/amarcuccio/" icon={LinkedInIcon} className="mt-4">
+              <SocialLink
+                href="https://www.linkedin.com/in/amarcuccio/"
+                icon={LinkedInIcon}
+                className="mt-4"
+              >
                 Follow on LinkedIn
               </SocialLink>
             </ul>

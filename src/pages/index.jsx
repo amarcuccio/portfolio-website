@@ -23,7 +23,6 @@ import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 
-
 function BriefcaseIcon(props) {
   return (
     <svg
@@ -58,20 +57,18 @@ function AcademicIcon(props) {
       aria-hidden="true"
       {...props}
     >
-    <path 
-      d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" 
-      className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-    />
-  </svg>
+      <path
+        d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+      />
+    </svg>
   )
 }
 
 function Article({ article }) {
   return (
     <Card as="article">
-      <Card.Title href={`/blog/${article.slug}`}>
-        {article.title}
-      </Card.Title>
+      <Card.Title href={`/blog/${article.slug}`}>{article.title}</Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
         {formatDate(article.date)}
       </Card.Eyebrow>
@@ -137,8 +134,6 @@ function Resume() {
       end: '2014',
     },
   ]
-
-  
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
@@ -284,9 +279,7 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>
-          Home - Andrew Marcuccio
-        </title>
+        <title>Home - Andrew Marcuccio</title>
         <meta
           name="description"
           content="I’m Andrew, an experienced I.T. professional and perpetual student based in Sudbury, Ontario. Welcome to my website! This is the best place to learn all about me, and follow along as I document my journey studying data analytics."
@@ -298,10 +291,10 @@ export default function Home({ articles }) {
             I.T. professional, student, and aspiring data analyst.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Andrew, an experienced I.T. professional and ambitious student 
-            based in Sudbury, Ontario. Welcome to my website! This is the best 
-            place to learn all about me, and follow along as I document my journey 
-            studying data analytics.
+            I’m Andrew, an experienced I.T. professional and ambitious student
+            based in Sudbury, Ontario. Welcome to my website! This is the best
+            place to learn all about me, and follow along as I document my
+            journey studying data analytics.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -337,7 +330,7 @@ export default function Home({ articles }) {
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Resume />
-            <Education/>
+            <Education />
           </div>
         </div>
       </Container>
