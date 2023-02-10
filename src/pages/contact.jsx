@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useRef } from 'react'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
 export default function Contact() {
@@ -10,10 +10,10 @@ export default function Contact() {
     e.preventDefault()
 
     emailjs.sendForm(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
+      process.env.NEXT_PUBLIC_SERVICE,
+      process.env.NEXT_PUBLIC_TEMPLATE,
       form.current,
-      process.env.REACT_APP_USER_ID
+      process.env.NEXT_PUBLIC_USER
     )
     e.target.reset()
   }
