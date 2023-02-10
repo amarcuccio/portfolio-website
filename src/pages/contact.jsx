@@ -36,6 +36,23 @@ export default function Contact() {
           <form ref={form} onSubmit={sendEmail} className="space-y-8">
             <div>
               <label
+                htmlFor="user_name"
+                className="mb-2 block text-base text-zinc-600 dark:text-zinc-400"
+              >
+                Your name
+              </label>
+              <input
+                type="text"
+                id="user_name"
+                name="user_name"
+                className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-500 dark:focus:ring-teal-500"
+                placeholder="First and last name"
+                maxLength={70}
+                required
+              />
+            </div>
+            <div>
+              <label
                 htmlFor="user_email"
                 className="mb-2 block text-base text-zinc-600 dark:text-zinc-400"
               >
@@ -47,22 +64,7 @@ export default function Contact() {
                 name="user_email"
                 className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-500 dark:focus:ring-teal-500"
                 placeholder="email@domain.com"
-                required
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="message_subject"
-                className="mb-2 block text-base text-zinc-600 dark:text-zinc-400"
-              >
-                Subject
-              </label>
-              <input
-                type="text"
-                id="message_subject"
-                name="message_subject"
-                className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-500 dark:focus:ring-teal-500"
-                placeholder="Let me know how I can help you"
+                maxLength={100}
                 required
               />
             </div>
@@ -79,6 +81,7 @@ export default function Contact() {
                 rows="6"
                 className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-500 dark:focus:ring-teal-500"
                 placeholder="Leave a comment..."
+                maxLength={1000}
                 required
               ></textarea>
             </div>

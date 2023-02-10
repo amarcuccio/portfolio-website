@@ -1,6 +1,6 @@
 ### Andrew's Portfolio Website
 
-- [ ] Readme
-- [ ] Contact form
-- [ ] 404 page
+- [ ] ReadMe
+- [ ] Contact form - Enable reCAPTCHA V2 verification
+- [ ] Contact form - Successfully sent message
 - [ ] Lighthouse score
