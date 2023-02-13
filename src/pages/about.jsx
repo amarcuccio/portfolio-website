@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
 import clsx from 'clsx'
-
 import { Container } from '@/components/Container'
 import {
   TwitterIcon,
@@ -17,9 +16,9 @@ function SocialLink({ className, href, children, icon: Icon }) {
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+        className="group flex text-sm font-medium text-zinc-800 transition hover:text-violet-600 dark:text-zinc-200 dark:hover:text-violet-600"
       >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-violet-600" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -50,20 +49,20 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I&apos;m Andrew Marcuccio. I live in Sudbury, Ontario, where I
-              study data analytics.
+              I’m Andrew Marcuccio. I live in Sudbury, Ontario, where I study
+              data analytics.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                As a child, I never had a good answer when asked: &quot;What do
-                you want to be when you grow up?&quot; I found it challenging to
-                identify an interest or hobby that I wanted to pursue as a
-                career (aside from becoming a professional hockey player!)
+                As a child, I never had a good answer when asked: ’What do you
+                want to be when you grow up?’ I found it challenging to identify
+                an interest or hobby that I wanted to pursue as a career (aside
+                from becoming a professional hockey player!)
               </p>
               <p>
                 In my early twenties, I studied computer engineering at my local
-                college. To be honest, I can&apos;t remember how I stumbled upon
-                the program. Over the next twelve years, I had the privilege of
+                college. To be honest, I can’t remember how I stumbled upon the
+                program. Over the next twelve years, I had the privilege of
                 putting my expertise into practice and gained experience working
                 in the mining, healthcare, and education sectors.
               </p>

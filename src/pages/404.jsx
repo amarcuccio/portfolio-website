@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Head from 'next/head'
-
 import errorCat from '@/images/errorcat.svg'
 import { Container } from '@/components/Container'
 

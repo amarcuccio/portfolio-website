@@ -2,7 +2,8 @@ import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
 import clsx from 'clsx'
-
+import { resumeList } from '@/lib/dataArrays'
+import { educationList } from '@/lib/dataArrays'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
@@ -16,9 +17,6 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import logoCambrian from '@/images/logos/cambrian.png'
-import logoHSN from '@/images/logos/hsn.png'
-import logoECM from '@/images/logos/ecm.png'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -81,60 +79,12 @@ function Article({ article }) {
 function SocialLink({ icon: Icon, ...props }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-violet-600 dark:fill-zinc-400" />
     </Link>
   )
 }
 
 function Resume() {
-  let resume = [
-    {
-      company: 'Cambrian College',
-      title: 'IT Technician',
-      logo: logoCambrian,
-      start: '2021',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
-    },
-    {
-      company: 'Health Sciences North',
-      title: 'Systems Analyst',
-      logo: logoHSN,
-      start: '2021',
-      end: '2021',
-    },
-    {
-      company: 'Cambrian College',
-      title: 'Programmer',
-      logo: logoCambrian,
-      start: '2017',
-      end: '2021',
-    },
-    {
-      company: 'Cambrian College',
-      title: 'IT Technician',
-      logo: logoCambrian,
-      start: '2016',
-      end: '2017',
-    },
-    {
-      company: 'Health Sciences North',
-      title: 'Information Technologist',
-      logo: logoHSN,
-      start: '2014',
-      end: '2016',
-    },
-    {
-      company: 'ECM Networks',
-      title: 'Automation Analyst',
-      logo: logoECM,
-      start: '2011',
-      end: '2014',
-    },
-  ]
-
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
@@ -142,7 +92,7 @@ function Resume() {
         <span className="ml-3">Work</span>
       </h2>
       <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
+        {resumeList.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-slate-50 dark:ring-0">
               <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
@@ -180,30 +130,6 @@ function Resume() {
 }
 
 function Education() {
-  let education = [
-    {
-      institution: 'Cambrian College',
-      program: 'Business Analytics',
-      logo: logoCambrian,
-      start: '2023',
-      end: '2024',
-    },
-    {
-      institution: 'Cambrian College',
-      program: 'Business',
-      logo: logoCambrian,
-      start: '2019',
-      end: '2021',
-    },
-    {
-      institution: 'Cambrian College',
-      program: 'Computer Systems Technology',
-      logo: logoCambrian,
-      start: '2007',
-      end: '2010',
-    },
-  ]
-
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
@@ -211,7 +137,7 @@ function Education() {
         <span className="ml-3">Education</span>
       </h2>
       <ol className="mt-6 space-y-4">
-        {education.map((role, roleIndex) => (
+        {educationList.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-slate-50 dark:ring-0">
               <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />

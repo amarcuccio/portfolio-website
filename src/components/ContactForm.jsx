@@ -29,7 +29,7 @@ export function ContactForm() {
           type="text"
           id="user_name"
           name="user_name"
-          className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-500 dark:focus:ring-teal-500"
+          className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm outline-none focus:border-violet-600 focus:ring-violet-600 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-violet-600 dark:focus:ring-violet-600"
           placeholder="Full name"
           maxLength={70}
           required
@@ -46,7 +46,7 @@ export function ContactForm() {
           type="email"
           id="user_email"
           name="user_email"
-          className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-500 dark:focus:ring-teal-500"
+          className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm outline-none focus:border-violet-600 focus:ring-violet-600 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-violet-600 dark:focus:ring-violet-600"
           placeholder="email@domain.com"
           maxLength={100}
           required
@@ -63,7 +63,7 @@ export function ContactForm() {
           id="email_message"
           name="email_message"
           rows="6"
-          className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-500 dark:focus:ring-teal-500"
+          className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm outline-none focus:border-violet-600 focus:ring-violet-600 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-violet-600 dark:focus:ring-violet-600"
           placeholder="Leave a comment..."
           maxLength={1000}
           required
@@ -71,7 +71,7 @@ export function ContactForm() {
       </div>
       <button
         type="submit"
-        className="rounded-lg bg-teal-400 py-3 px-5 text-center text-base text-white hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-700 sm:w-fit"
+        className="rounded-lg bg-violet-600 py-3 px-5 text-center text-base text-white hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-700 dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-violet-700 sm:w-fit"
       >
         Send message
       </button>
