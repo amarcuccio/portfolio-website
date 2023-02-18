@@ -1,6 +1,7 @@
 ### Andrew's Portfolio Website
 
-- [ ] ReadMe
-- [ ] Contact form - Enable reCAPTCHA V2 verification
-- [ ] Contact form - Successfully sent message
-- [ ] Lighthouse score
+- [ ] Complete the ReadMe
+- [ ] Contact form -> Successfully sent message
+- [ ] Refactor large pages into components
+- [ ] Language/verbiage review on all pages
+- [ ] Lighthouse score -> correct any issues
