@@ -43,15 +43,21 @@ export default function Contact() {
               >
                 Your name
               </label>
-              <input
-                type="text"
-                id="user_name"
-                name="user_name"
-                className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-400 dark:focus:ring-teal-400"
-                placeholder="Full name"
-                maxLength={70}
-                required
-              />
+              {!emailIsSent ? (
+                <div role="status">
+                  <div className="mb-4 h-12 w-full rounded-lg bg-gray-200 dark:bg-gray-700"></div>
+                </div>
+              ) : (
+                <input
+                  type="text"
+                  id="user_name"
+                  name="user_name"
+                  className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-400 dark:focus:ring-teal-400"
+                  placeholder="Full name"
+                  maxLength={70}
+                  required
+                />
+              )}
             </div>
             <div>
               <label
@@ -60,15 +66,21 @@ export default function Contact() {
               >
                 Your email
               </label>
-              <input
-                type="email"
-                id="user_email"
-                name="user_email"
-                className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-400 dark:focus:ring-teal-400"
-                placeholder="email@domain.com"
-                maxLength={100}
-                required
-              />
+              {!emailIsSent ? (
+                <div role="status">
+                  <div className="mb-4 h-12 w-full rounded-lg bg-gray-200 dark:bg-gray-700"></div>
+                </div>
+              ) : (
+                <input
+                  type="email"
+                  id="user_email"
+                  name="user_email"
+                  className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-400 dark:focus:ring-teal-400"
+                  placeholder="email@domain.com"
+                  maxLength={100}
+                  required
+                />
+              )}
             </div>
             <div className="sm:col-span-2">
               <label
@@ -77,25 +89,31 @@ export default function Contact() {
               >
                 Your message
               </label>
-              <textarea
-                id="email_message"
-                name="email_message"
-                rows="6"
-                className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-400 dark:focus:ring-teal-400"
-                placeholder="Leave a comment..."
-                maxLength={1000}
-                required
-              ></textarea>
+              {!emailIsSent ? (
+                <div role="status">
+                  <div className="mb-4 h-40 w-full rounded-lg bg-gray-200 dark:bg-gray-700"></div>
+                </div>
+              ) : (
+                <textarea
+                  id="email_message"
+                  name="email_message"
+                  rows="6"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm outline-none focus:border-teal-500 focus:ring-teal-500 dark:border-gray-600 dark:bg-zinc-800/90 dark:text-white dark:placeholder-gray-400 dark:focus:border-teal-400 dark:focus:ring-teal-400"
+                  placeholder="Leave a comment..."
+                  maxLength={1000}
+                  required
+                ></textarea>
+              )}
             </div>
             {!emailIsSent ? (
+              <EmailSent />
+            ) : (
               <button
                 type="submit"
                 className="rounded-lg bg-teal-500 py-3 px-5 text-center text-base text-white hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-teal-400 dark:hover:bg-teal-500 dark:focus:ring-teal-400 sm:w-fit"
               >
                 Send message
               </button>
-            ) : (
-              <EmailSent />
             )}
           </form>
         </div>
