@@ -43,7 +43,7 @@ export default function Contact() {
               >
                 Your name
               </label>
-              {!emailIsSent ? (
+              {emailIsSent ? (
                 <div role="status">
                   <div className="mb-4 h-12 w-full rounded-lg bg-gray-200 dark:bg-gray-700"></div>
                 </div>
@@ -66,7 +66,7 @@ export default function Contact() {
               >
                 Your email
               </label>
-              {!emailIsSent ? (
+              {emailIsSent ? (
                 <div role="status">
                   <div className="mb-4 h-12 w-full rounded-lg bg-gray-200 dark:bg-gray-700"></div>
                 </div>
@@ -89,7 +89,7 @@ export default function Contact() {
               >
                 Your message
               </label>
-              {!emailIsSent ? (
+              {emailIsSent ? (
                 <div role="status">
                   <div className="mb-4 h-40 w-full rounded-lg bg-gray-200 dark:bg-gray-700"></div>
                 </div>
@@ -105,7 +105,7 @@ export default function Contact() {
                 ></textarea>
               )}
             </div>
-            {!emailIsSent ? (
+            {emailIsSent ? (
               <EmailSent />
             ) : (
               <button
